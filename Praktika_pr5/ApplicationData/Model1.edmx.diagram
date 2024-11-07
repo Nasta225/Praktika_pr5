@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="02e82616ab144a7aaaa5bbf94d5ddc51" Name="Diagram1">
+        <EntityTypeShape EntityType="ChkolaModel.Client" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.ClientService" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.Gender" Width="1.5" PointX="1.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.Service" Width="1.5" PointX="0.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.ServicePhoto" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChkolaModel.Tag" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <AssociationConnector Association="ChkolaModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.AttachedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ChkolaModel.TagOfClient" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

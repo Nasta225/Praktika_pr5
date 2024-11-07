@@ -1,0 +1,43 @@
+﻿<Page x:Class="Praktika_pr5.PageMain.PageShool"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praktika_pr5.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageShool">
+
+    <Grid Background="LightSkyBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="600*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="ДОБАВЛЕНИЕ УСЛУГИ" Style="{StaticResource TextBlock}" Foreground="Blue" Grid.Column="1" HorizontalAlignment="Center"/>
+        <TextBlock Text="Наименование" Grid.Row="1" Style="{StaticResource TextBlock}"/>
+        <TextBlock Text="Стоимость" Grid.Row="2"  Style="{StaticResource TextBlock}"/>
+        <TextBlock Text="Длительность" Grid.Row="3" Style="{StaticResource TextBlock}"/>
+        <TextBlock Text="Описание" Grid.Row="4" Style="{StaticResource TextBlock}"/>
+        <TextBlock Text="Действующая скидка" Grid.Row="5" Style="{StaticResource TextBlock}"/>
+        <TextBlock Text="Главное изображение" Grid.Row="6" Style="{StaticResource TextBlock}"/>
+        <Button Content="Назад" Style="{StaticResource ButtonD}" Grid.Row="7" Grid.Column="0" Click="Button_Click"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxA}" MaxHeight="50" Text="{Binding naimenov}" />
+        <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxA}" Text="{Binding kolichestvo}"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Style="{StaticResource TextBoxA}" Text="{Binding cena}"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Style="{StaticResource TextBoxA}" Text="{Binding cena}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Style="{StaticResource TextBoxA}" Text="{Binding cena}"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBoxA}" Text="{Binding cena}"/>
+        <Button Grid.Row="7" Grid.Column="2" Content="Сохранить" Name="btnSave" Style="{StaticResource ButtonF}" Click="btnSave_Click"/>
+    </Grid>
+</Page>
